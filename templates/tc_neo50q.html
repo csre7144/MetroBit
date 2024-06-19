@@ -1,0 +1,399 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<!-- Meta Tags -->
+		    <meta charset="utf-8">
+		    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		    <meta name="keywords" content="Site keywords here">
+		    <meta name="description" content="">
+		    <meta name='copyright' content=''>
+		    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		    
+		    <!-- Title -->
+			<title>MetroBit Networks Pvt. Ltd</title>
+		    
+		    <!-- Favicon -->
+			<link rel="icon" href="{% static 'img/metrobit_icon.png' %}">
+		    
+		    <!-- Google Fonts -->
+	    
+		    <link rel="preconnect" href="https://fonts.googleapis.com">
+		    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+		    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    
+		    <!-- Bootstrap CSS -->
+		    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+		    <!-- Nice Select CSS -->
+		    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+		    <!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+		    <!-- icofont CSS -->
+		<link rel="stylesheet" href="{% static 'css/icofont.css' %}">
+		    <!-- Slicknav -->
+		    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}">
+		    <!-- Owl Carousel CSS -->
+		<link rel="stylesheet" href="{% static 'css/owl-carousel.css' %}">
+		    <!-- Datepicker CSS -->
+		    <link rel="stylesheet" href="{% static 'css/datepicker.css' %}">
+		    <!-- Animate CSS -->
+		<link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+		    <!-- Magnific Popup CSS -->
+		<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+		    
+		    <!-- Medipro CSS -->
+		<link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+		<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+		    
+	  </head>
+    <body>
+	
+	<!-- Preloader -->
+	<div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+            </div>
+        </div>
+      <!-- End Preloader -->
+		
+
+
+	<!-- Header Area -->
+	<div class="header-inner"  id="topheader">
+		<header class="navbar navbar-expand-md">
+			<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+			<div class="container">
+				<a href="{% url 'home' %}"><img src="{% static 'img/logo2.png' %}" alt="#"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				  <ul class="navbar-nav t">
+					<li class="nav-item">
+					  <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Product
+						</a>
+						<ul class="dropdown-menu">
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Lenovo
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="{% url 'lenovo' %}">LAPTOP</a></li>
+									<li><a class="dropdown-item" href="{% url 'desktoplist' %}">DESKTOP & AIO</a></li>
+									<li><a class="dropdown-item" href="{% url 'workstation' %}">WORKSTATION</a></li>
+									<li><a class="dropdown-item" href="#">SERVER</a></li>
+									<li><a class="dropdown-item" href="{% url 'tabletlist' %}">TABLET</a></li>
+									<li><a class="dropdown-item" href="{% url 'displaylist' %}">DISPLAY</a></li>
+									{% comment %} <li><a class="dropdown-item" href="#">ACCESSORIES</a></li>
+									<li><a class="dropdown-item" href="#">CAREPACK</a></li> {% endcomment %}
+								</ul>
+							</li>
+							
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									NETGEAR
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="{% url 'netgear_us' %}">SWITCH-UNMANAGED</a></li>
+									<li><a class="dropdown-item" href="{% url 'netgear_ms' %}">SWITCH-MANAGED</a></li>
+									<li><a class="dropdown-item" href="{% url 'netgear_router' %}">WIRELESS ROUTER</a></li>
+									<li><a class="dropdown-item" href="{% url 'netgear_ap' %}">WIRELESS ACCESSPOINT</a></li>
+								</ul>
+							</li>
+							<!-- BENQ -->
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									BENQ
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="{% url 'benqled' %}">BenQ LED</a></li>
+									<li><a class="dropdown-item" href="{% url 'benq_projector' %}">BenQ PROJECTOR</a></li>
+									<li><a class="dropdown-item" href="{% url 'benq_intercativity_display' %}">INTERACTIVE DISPLAY</a></li>
+									<li><a class="dropdown-item" href="{% url 'benqled_cameralist' %}">CAMERA</a></li>
+								</ul>
+							</li>
+							<!-- END BENQ -->
+
+							<!-- PANTUM -->
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									PANTUM
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="{% url 'pantum_productsingle' %}">SINGLE & DUPLEX SINGLE FUNCTIONS</a></li>
+									<li><a class="dropdown-item" href="{% url 'pantum_product' %}">MULTIFUNCTIONS & DUPLEX MULTIFUNCTIONS</a></li>
+								</ul>
+							</li>
+							<!-- END PANTUM -->
+
+							<!-- LANCAB -->
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									LANCAB
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="{% url 'network_cable' %}">Network Cable</a></li>
+									<li><a class="dropdown-item" href="{% url 'cctv_cable' %}">CCTV Cable</a></li>
+								</ul>
+							</li>
+							<!-- END LANCAB -->
+
+							<!-- SOPHOS & QNAP-->
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="{% url 'sophoslist' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									SOPHOS
+								</a>
+							</li>
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="{% url 'qnaplist' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									QNAP
+								</a>
+							</li>
+							<!-- END SOPHOS & QNAP-->
+
+							<!-- BRNADS.LIVE -->
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="{% url 'bl' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Brands.Live
+								</a>
+							</li>
+							<!-- END BRANDS.LIVE -->
+						</ul>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Company
+						</a>
+						<ul class="dropdown-menu">
+							
+							<!-- about -->
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="{% url 'about' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									About Us
+								</a>
+							</li>
+							<!-- END about -->
+
+							<!-- team -->
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="{% url 'team' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Our Team
+								</a>
+							</li>
+							<!-- end -->
+
+							<!-- career -->
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="{% url 'career' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Career
+								</a>
+							</li>
+							<!-- end career -->
+						</ul>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="{% url 'achievements' %}">Achievement</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+					</li>
+					
+				  </ul>
+				</div>
+			</div>
+			</nav>
+		</header>
+	</div>
+	<!-- End Header Area -->
+
+		<!-- Lenovo Product -->
+		<section class="products mt-5">
+			<div class="container">
+				<!-- <h1>PANTUM PRODUCT</h1> -->
+                        <h1>Lenovo ThinkCentre Neo 50q</h1>
+				<div class="row">
+					<div class="col-lg-5 col-12">
+						<div class="product">
+                                          <img src="{% static 'img/lenovo/desktop/back007.avif' %}" alt="">
+							
+						</div>
+					</div>
+					<div class="col-lg-7 col-12">
+						<div class="product">
+							
+							<!-- <p>Pantum is an international company which develops, manufactures and sells laser printers and toner cartridges that are made in China. Its Pantum branded laser printers have advanced core technologies and have comprehensive self-developed patent systems. The company has a mission to provide users with reliable, cost effective and environmentally friendly printing solutions. <br><br>Metrobit Networks Pvt. Limited is a premier partner for Pantum Printers.</p> -->
+                                          <li>	Up to 13th Gen Intel® Core™ i7-13700</li>
+                                          <li>	Intel® UHD Graphics (integrated)</li>
+                                          <li>	Up to 64GB DDR4-3200, 2x UDIMM</li>
+                                          <li>	Up to two drives, 1x 3.5" HDD + 1x M.2 SSD</li>
+                                          <!-- <li>	Up to two drives, 1x 3.5" HDD + 1x M.2 SSD</li> -->
+                                          <!-- <li>	Up to 14” (1920x1080) IPS, 300nits, 100% sRGB</li> -->
+                                          <!-- <li>	Up to 14” (1920x1080) IPS, 300nits, 100% sRGB</li> -->
+                                          <!-- <li>- The metal frame inside the machine is strong and durable</li> -->
+                                         
+                                          <!-- <li>- Dual-band WiFi(2.4G/5G) support</li> -->
+						</div>
+                                    
+					</div>
+				</div>
+			</div>
+		</section>
+            
+		<!-- End product -->
+
+            <section class="container product-img mt-4">
+                  <div class="prod-img">
+                        <img src="{% static 'img/lenovo/desktop/back008.webpz' %}" alt="" >
+                  </div>
+            </section>
+
+            <section style="padding-bottom: 40px;">
+                  <div class="container">
+                        <div class="tba">
+                              <div class="container">
+                                    <div class="row">
+                                          <div class="col-lg-6 col-md-6 col-12">1. Headphone / microphone combo jack (3.5mm)</div>
+                                          <div class="col-lg-6 col-md-6 col-12">2. USB-C® 3.2 Gen 2 (support data transfer and 5V@0.9A charging)</div>
+                                          <div class="col-lg-6 col-md-6 col-12">3.  USB 3.2 Gen 2 (Always On and 5V@2.1A charging)</div>
+                                          <div class="col-lg-6 col-md-6 col-12">4. Power button</div>
+                                          <div class="col-lg-6 col-md-6 col-12">5. Power-In</div>
+                                          <div class="col-lg-6 col-md-6 col-12">6. DisplayPort™ 1.4</div>
+                                          <div class="col-lg-6 col-md-6 col-12">7. USB 3.2 Gen 2</div>
+                                          <div class="col-lg-6 col-md-6 col-12">8. HDMI® 2.1 TMDS</div>
+                                          <div class="col-lg-6 col-md-6 col-12">9. USB 2.0</div>
+                                          <div class="col-lg-6 col-md-6 col-12">10. USB 2.0</div>
+                                          <div class="col-lg-6 col-md-6 col-12">	11. USB 3.2 Gen 2</div>
+                                          <div class="col-lg-6 col-md-6 col-12">	12. Ethernet (RJ-45)</div>
+                                          <div class="col-lg-6 col-md-6 col-12">	13. Punch out port*</div>
+                                          <div class="col-lg-6 col-md-6 col-12">	</div>
+                                          
+                                          
+                                    </div>
+                                  </div>
+                        </div>
+                  </div>
+            </section>
+
+		
+		
+		<!-- Footer Area -->
+		<footer id="footer" class="footer ">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="single-footer">
+								<!-- <h2>About Us</h2> -->
+								<img class="img-fluid mt-2" src="img/Logo_White_Metrobit.png" alt="footer-logo">
+								<p class="mt-2">We are Team of Technology Experts Joined hand to pursue dream of bring affirmative technical revolution in the society with our IT Products portfolio.</p>
+								<!-- Social -->
+								<ul class="social">
+									<li><a href="https://www.facebook.com/MetrobitNetworks?mibextid=ZbWKwL"><i class="icofont-facebook"></i></a></li>
+									<li><a href="https://x.com/MetrobitN?t=OvpQUt5u5DGLtr7DTtVX_Q&s=08"><i class="icofont-twitter"></i></a></li>
+									<li><a href="https://www.instagram.com/metrobitnetworkspvt.ltd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==	"><i class="icofont-instagram"></i></a></li>
+									<li><a href="https://whatsapp.com/channel/0029VaCz66vL7UVXUBTbFu23"><i class="icofont-brand-whatsapp"></i></i></a></li>
+								</ul>
+								<!-- End Social -->
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="single-footer f-link">
+								<h2>About</h2>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="index.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+											<li><a href="about.html"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+											<li><a href="teams.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Team</a></li>
+											<li><a href="career.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Career</a></li>
+											<li><a href="achieve.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Achievement</a></li>
+											<li><a href="contact.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact</a></li>
+												
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Address</h2>
+								<h5 style="color: white;">Head Office Ahmedabad</h5><p>Plot no : 517,shree yamunakunj ,beside Sagar complex,Near Iskon Gathiya Rath, Opp Sanjivani Hospital, Vastrapur lake, Ahmedabad-380015</p>
+								<br>
+								<h5 style="color: white; padding-bottom: 10px;">Baroda</h5><p>GF-1 "TANISHQ" COMPLEX NR. Cow Circle,OPP.SBI URMI BRANCH PRODUCTIVITY ROAD AKOTA. Vadodara -39002</p>
+								<br>
+								<h5 style="color: white; padding-bottom: 10px;">Surat</h5><p>H.NO - 1/975 PALIYA MOHOLLO NEAR -POST OFFICE CHAR RASTANANPURA - SURAT-395001</p>
+								<br>
+								<h5 style="color: white; padding-bottom: 10px;">Rajkot</h5><p>PARIVAR" 4 SARDARNAGAR (WEST) , NR, ASTRON  CHOWK , TAGORE  ROAD , RAJOKT -360001</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="copyright-content">
+								<p>© Copyright 2024  |  All Rights Reserved by MetroBit Networls PVT. LTD.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+		<!--/ End Footer Area -->
+		
+		<!-- jquery Min JS -->
+		<script src="{% static 'js/jquery.min.js' %}"></script>
+		<!-- jquery Migrate JS -->
+		<script src="{% static 'js/jquery-migrate-3.0.0.js' %}"></script>
+		<!-- jquery Ui JS -->
+		<script src="{% static 'js/jquery-ui.min.js' %}"></script>
+		<!-- Easing JS -->
+        	<script src="{% static 'js/easing.js' %}"></script>
+		<!-- Color JS -->
+		<script src="{% static 'js/colors.js' %}"></script>
+		<!-- Popper JS -->
+		<script src="{% static 'js/popper.min.js' %}"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script src="{% static 'js/bootstrap-datepicker.js' %}"></script>
+		<!-- Jquery Nav JS -->
+        	<script src="{% static 'js/jquery.nav.js' %}"></script>
+		<!-- Slicknav JS -->
+		<script src="{% static 'js/slicknav.min.js' %}"></script>
+		<!-- ScrollUp JS -->
+        	<script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+		<!-- Niceselect JS -->
+		<script src="{% static 'js/niceselect.js' %}"></script>
+		<!-- Tilt Jquery JS -->
+		<script src="{% static 'js/tilt.jquery.min.js' %}"></script>
+		<!-- Owl Carousel JS -->
+        	<script src="{% static 'js/owl-carousel.js' %}"></script>
+		<!-- counterup JS -->
+		<script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+		<!-- Steller JS -->
+		<script src="{% static 'js/steller.js' %}"></script>
+		<!-- Wow JS -->
+		<script src="{% static 'js/wow.min.js' %}"></script>
+		<!-- Magnific Popup JS -->
+		<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="{% static 'js/bootstrap.min.js' %}"></script>
+		<!-- Main JS -->
+		<script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>

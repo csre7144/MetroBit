@@ -1,0 +1,526 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<!-- Meta Tags -->
+		    <meta charset="utf-8">
+		    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		    <meta name="keywords" content="Site keywords here">
+		    <meta name="description" content="">
+		    <meta name='copyright' content=''>
+		    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		    
+		    <!-- Title -->
+			<title>MetroBit Networks Pvt. Ltd</title>
+		    
+		    <!-- Favicon -->
+			<link rel="icon" href="{% static 'img/metrobit_icon.png' %}">
+		    
+		    <!-- Google Fonts -->
+	    
+		    <link rel="preconnect" href="https://fonts.googleapis.com">
+		    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+		    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    
+		    <!-- Bootstrap CSS -->
+		    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+		    <!-- Nice Select CSS -->
+		    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+		    <!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+		    <!-- icofont CSS -->
+		<link rel="stylesheet" href="{% static 'css/icofont.css' %}">
+		    <!-- Slicknav -->
+		    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}">
+		    <!-- Owl Carousel CSS -->
+		<link rel="stylesheet" href="{% static 'css/owl-carousel.css' %}">
+		    <!-- Datepicker CSS -->
+		    <link rel="stylesheet" href="{% static 'css/datepicker.css' %}">
+		    <!-- Animate CSS -->
+		<link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+		    <!-- Magnific Popup CSS -->
+		<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+		    
+		    <!-- Medipro CSS -->
+		<link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+		<link rel="stylesheet" href="{% static 'css/responsive.css' %}">   
+	</head>
+    <body>
+	
+	<!-- Preloader -->
+	<div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+            </div>
+        </div>
+      <!-- End Preloader -->
+		
+
+
+	<!-- Header Area -->
+	<div class="header-inner"  id="topheader">
+		<header class="navbar navbar-expand-md">
+			<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+			<div class="container">
+				<a href="{% url 'home' %}"><img src="{% static 'img/logo2.png' %}" alt="#"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				  <ul class="navbar-nav t">
+					<li class="nav-item">
+					  <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Product
+						</a>
+						<ul class="dropdown-menu">
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Lenovo
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="{% url 'lenovo' %}">LAPTOP</a></li>
+									<li><a class="dropdown-item" href="{% url 'desktoplist' %}">DESKTOP & AIO</a></li>
+									<li><a class="dropdown-item" href="{% url 'workstation' %}">WORKSTATION</a></li>
+									<li><a class="dropdown-item" href="#">SERVER</a></li>
+									<li><a class="dropdown-item" href="{% url 'tabletlist' %}">TABLET</a></li>
+									<li><a class="dropdown-item" href="{% url 'displaylist' %}">DISPLAY</a></li>
+									{% comment %} <li><a class="dropdown-item" href="#">ACCESSORIES</a></li>
+									<li><a class="dropdown-item" href="#">CAREPACK</a></li> {% endcomment %}
+								</ul>
+							</li>
+							
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									NETGEAR
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="{% url 'netgear_us' %}">SWITCH-UNMANAGED</a></li>
+									<li><a class="dropdown-item" href="{% url 'netgear_ms' %}">SWITCH-MANAGED</a></li>
+									<li><a class="dropdown-item" href="{% url 'netgear_router' %}">WIRELESS ROUTER</a></li>
+									<li><a class="dropdown-item" href="{% url 'netgear_ap' %}">WIRELESS ACCESSPOINT</a></li>
+								</ul>
+							</li>
+							<!-- BENQ -->
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									BENQ
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="{% url 'benqled' %}">BenQ LED</a></li>
+									<li><a class="dropdown-item" href="{% url 'benq_projector' %}">BenQ PROJECTOR</a></li>
+									<li><a class="dropdown-item" href="{% url 'benq_intercativity_display' %}">INTERACTIVE DISPLAY</a></li>
+									<li><a class="dropdown-item" href="{% url 'benqled_cameralist' %}">CAMERA</a></li>
+								</ul>
+							</li>
+							<!-- END BENQ -->
+
+							<!-- PANTUM -->
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									PANTUM
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="{% url 'pantum_productsingle' %}">SINGLE & DUPLEX SINGLE FUNCTIONS</a></li>
+									<li><a class="dropdown-item" href="{% url 'pantum_product' %}">MULTIFUNCTIONS & DUPLEX MULTIFUNCTIONS</a></li>
+								</ul>
+							</li>
+							<!-- END PANTUM -->
+
+							<!-- LANCAB -->
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									LANCAB
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="{% url 'network_cable' %}">Network Cable</a></li>
+									<li><a class="dropdown-item" href="{% url 'cctv_cable' %}">CCTV Cable</a></li>
+								</ul>
+							</li>
+							<!-- END LANCAB -->
+
+							<!-- SOPHOS & QNAP-->
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="{% url 'sophoslist' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									SOPHOS
+								</a>
+							</li>
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="{% url 'qnaplist' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									QNAP
+								</a>
+							</li>
+							<!-- END SOPHOS & QNAP-->
+
+							<!-- BRNADS.LIVE -->
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="{% url 'bl' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Brands.Live
+								</a>
+							</li>
+							<!-- END BRANDS.LIVE -->
+						</ul>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Company
+						</a>
+						<ul class="dropdown-menu">
+							
+							<!-- about -->
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="{% url 'about' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									About Us
+								</a>
+							</li>
+							<!-- END about -->
+
+							<!-- team -->
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="{% url 'team' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Our Team
+								</a>
+							</li>
+							<!-- end -->
+
+							<!-- career -->
+							<li class="nav-item dropend">
+								<a class="nav-link dropdown-toggle" href="{% url 'career' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Career
+								</a>
+							</li>
+							<!-- end career -->
+						</ul>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="{% url 'achievements' %}">Achievement</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+					</li>
+					
+				  </ul>
+				</div>
+			</div>
+			</nav>
+		</header>
+	</div>
+	<!-- End Header Area -->
+
+		<!-- Lenovo Product -->
+		<section class="products mt-5">
+			<div class="container">
+				<!-- <h1>PANTUM PRODUCT</h1> -->
+                        <h1>CAT6 SFTP 23 AWG CABLE</h1>
+				<div class="row">
+					<div class="col-lg-5 col-12">
+						<div class="product">
+							<img src="{% static 'img/lancab/CAT6_SFTP_23.png' %}" alt="">
+						</div>
+					</div>
+					<div class="col-lg-7 col-12">
+						<p style="font-size: 17px; color: black; padding: 10px; text-align: justify;">This cable operates at an impressive bandwidth of up to 250 MHz, exceeds the stringent requirements of TIA/EIA-568.C.2 standards and ensures seamless data transmission across your network. With its 23AWG solid tinned copper screening, it provides exceptional protection against electromagnetic interference (EMI), effectively minimizing signal loss and ensuring reliable connectivity.</p>
+						<div class="product">
+							<h3>SPECIFICATIONS</h3>
+							<li>Conductor: 23 AWG Multi-cores (Solid)</li>
+                                          <li>Conductor Meta: Bare Copper</li>
+                                          <li>Insulation Material: HD-PE</li>
+                                          <li>Pairs: 4-pair shielded twisted pair cable </li>
+                                          <li>Pair Wrapping: Polyester tape and aluminum foil with drain wire</li>
+                                          <li>Shield: Aluminum / Polyester Foil Tinned copper Braiding</li>
+                                          <li>Sheath: PVC/LSZH</li>
+                                          <li>Cable Diameter: 7.5 mm nominal</li>
+                                          <li>Jacket Material: FR PVC</li>
+                                          <li>Compliance: Verified compliant with EIA/TIA standards</li>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container mt-4">
+				<!-- <h1>PANTUM PRODUCT</h1> -->
+                        <h1>CAT6- U/UTP CABLE</h1>
+				<div class="row">
+					<div class="col-lg-5 col-12">
+						<div class="product">
+							<img src="{% static 'img/lancab/CAT6_UTP_OUTDOOR_23.png' %}" alt="">
+						</div>
+					</div>
+					<div class="col-lg-7 col-12">
+						<h3>LANCAB CAT 6 UTP 23 AWG</h3>
+						<p style="font-size: 17px; color: black; padding: 10px; text-align: justify;">Designed to support Gigabit Ethernet (1000 Base-T) standards, this cable operates at a bandwidth of up to 250 MHz for seamless connectivity and high-speed data transfer. This cable is crafted with meticulous attention to detail to deliver superior conductivity, enabling reliable data transmission over long distances while guaranteeing optimal performance.</p>
+						<div class="product">
+							<h3>SPECIFICATIONS</h3>
+							<li>Category: 6 UTP Solid Cable</li>
+                                          <li>Conductor: 23 AWG (Solid), Bare Copper</li>
+                                          <li>Insulation Material: HD-PE</li>
+                                          <li>OD: 6.1mm ±0.2</li>
+                                          <li>Resistance Unbalance: 5% Max</li>
+                                          <li>Capacitance Unbalance: 330pF/100m</li>
+                                          <li>Delay Skew: < 45nS</li>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container mt-4">
+				<div class="row">
+					<div class="col-lg-5 col-12">
+						<div class="product">
+							<img src="{% static 'img/lancab/CAT6_UTP_OUTDOOR_24.png' %}" alt="">
+						</div>
+					</div>
+					<div class="col-lg-7 col-12">
+						<h3>LANCAB CAT 6 UTP 24 AWG</h3>
+						<p style="font-size: 17px; color: black; padding: 10px; text-align: justify;">The 24 AWG copper wires, encased in superior insulation, further enhance performance, offering unparalleled reliability and efficiency. It is capable of transmitting data at speeds of up to 1000 Mbps and boasts a frequency range of 250 MHz, CAT6 cables are primed for a diverse array of applications.</p>
+						<div class="product">
+							<h3>SPECIFICATIONS</h3>
+							<li>Conductor Metal: Solid Bare Copper</li>
+                                          <li>Color Code: Gray</li>
+                                          <li>Conductor Diameter: 0.510mm (Nominal), 24 AWG</li>
+                                          <li>Insulation Diameter: 0.940mm (Nominal), Insulation Material: HD-PE</li>
+                                          <li>Jacket Material: PVC</li>
+                                          <li>Cable Diameter: 5.7mm</li>
+                                          <li>PE Central Cross Separator</li>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container mt-4">
+				<!-- <h1>PANTUM PRODUCT</h1> -->
+                        <h1>CAT 6 ARMOURED CABLE 23 AWG COPPER</h1>
+				<div class="row">
+					<div class="col-lg-5 col-12">
+						<div class="product">
+							<img src="{% static 'img/lancab/CAT6_ARMOURED_23_COPPER.png' %}" alt="">
+						</div>
+					</div>
+					<div class="col-lg-7 col-12">
+						<p style="font-size: 17px; color: black; padding: 10px; text-align: justify;">These cables offer smooth signal transmission and are the gold standard for networking in both local area and internet settings. With full duplex mode compared to half duplex Wi-Fi, they ensure optimal performance and reliability. With the ability to support speeds of up to 2.5Gbps, 5Gbps, and 10Gbps at limited distances with compatible devices, they cater to the increasing demand for faster data transmission and reduced waiting time.</p>
+						<div class="product">
+							<h3>SPECIFICATIONS</h3>
+							<li>Speed: Up to 5Gbps (802.3bz/ab/u)</li>
+                                          <li>Stable Frequency: Up to 250MHz</li>
+                                          <li>Armoring: Aluminum Wire</li>
+                                          <li>Insulation: PE over Copper, Inner Jacket – PVC Grey, FR-PVC Black over 4 Pairs</li>
+                                          <li>Other Features: UL, ETL, HDPE Insulation</li>
+                                          <li>TIA Standard: C.2</li>
+                                          <li>Ethernet Frequency (MHz): 200</li>
+                                          <li>Min. Twists per meter: >200</li>
+                                          <li>TPUFS: Armored UTP</li>
+                                          <li>Conductor Coating: High Density Polyethylene (HDPE)</li>
+                                          <li>Insulator Coating: Fire Resistant-PVC (FR-PVC)</li>
+                                          <li>Certification: ETL Verified, RoHS Compliant, UL Listed</li>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container mt-4">
+				<!-- <h1>PANTUM PRODUCT</h1> -->
+                        <h1>CAT6- UTP/ OUTDOOR</h1>
+				<div class="row">
+					<div class="col-lg-5 col-12">
+						<div class="product">
+							<img src="{% static 'img/lancab/CAT6_UTP_23.png' %}" alt="">
+						</div>
+					</div>
+					<div class="col-lg-7 col-12">
+						<h3>LANCAB CAT 6 UTP 23 AWG</h3>
+						<p style="font-size: 17px; color: black; padding: 10px; text-align: justify;">It boasts a robust 4 Pair 23 AWG solid bare copper conductor construction, ensuring unparalleled durability and reliability. With a high bandwidth capacity of 250 MHz, this cable facilitates fast and efficient transmission of voice, video, and data across LAN networks. Its rugged double-sheath construction provides protection against harsh environmental conditions, making it suitable for outdoor above-ground installations.</p>
+						<div class="product">
+							<h3>SPECIFICATIONS</h3>
+							<li>Conductor: 23 AWG Solid Bare Copper</li>
+                                          <li>Separator: PE Cross Separator</li>
+                                          <li>Insulation: High Density Polyethylene</li>
+                                          <li>Pairs: 4 Pairs Twisted together</li>
+                                          <li>Sheet: PVC</li>
+                                          <li>Bending Radius: 8 X OD at 20°C</li>
+                                          <li>Diameter: 7.5 ± 0.5 mm</li>
+                                          <li>Temperature: Operating: -20°C to +60°C, Installation: 0°C to +50°C</li>
+                                          <li>Rip Cord: Nylon</li>
+                                          <li>Pulling Force: 25 lbs</li>
+                                          <li>Jacket: Black HDPE</li>
+                                          <li>Resistance: 9.2 Ω/100 Mtr max</li>
+                                          <li>Capacitance: Mutual: 5.6 nF, Unbalance: max 5%, 330 p</li>
+                                          <li>Delays: Skew: 48 ns/100 Mtr, Propagation: < 538 ns/100 Mtr</li>
+                                          <li>NVP: 69%</li>
+                                          <li>Current Rating: max 1.5 A</li>
+                                          <li>Voltage: 72 V</li>
+                                          <li>Dielectric Strength: 1000 V RMS</li>
+                                          <li>Insulation Resistance: 100 M Ω</li>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container mt-4">
+				<div class="row">
+					<div class="col-lg-5 col-12">
+						<div class="product">
+							<img src="{% static 'img/lancab/CAT6_UTP_24.png' %}" alt="">
+						</div>
+					</div>
+					<div class="col-lg-7 col-12">
+						<h3>LANCAB CAT 6 UTP 24 AWG</h3>
+						<p style="font-size: 17px; color: black; padding: 10px; text-align: justify;">This meticulously crafted cable comprises 24 AWG copper wire insulated with Polyethylene. Each pair is formed by twisting two insulated conductors together, with four pairs making up the core unit, separated by a cross filler. To ensure durability and protection against outdoor elements, the core is sheathed with flame retardant HDPE and jacketed with UV Stabilized FRLS, PE, or LDPE material.</p>
+						<div class="product">
+							<h3>SPECIFICATIONS</h3>
+							<li>Cable Type: U/UTP (Unshielded)</li>
+                                          <li>Conductor Gauge: 24 AWG</li>
+                                          <li>Pair Quantity: 4</li>
+                                          <li>Conductor Quantity: 8</li>
+                                          <li>Conductor Type: Solid Copper</li>
+                                          <li>Separator Type: Insulator</li>
+                                          <li>Pulling Tension: 20 Kg</li>
+                                          <li>Color: Black</li>
+                                          <li>Packing: 305 mtr in Drum</li>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container mt-4">
+				<div class="row">
+					<div class="col-lg-5 col-12">
+						<div class="product">
+							<img src="{% static 'img/lancab/CAT6A_23_AWG_CABLE.png' %}" alt="">
+						</div>
+					</div>
+					<div class="col-lg-7 col-12">
+						<h3>CAT 6A 23 AWG CABLE</h3>
+						<p style="font-size: 17px; color: black; padding: 10px; text-align: justify;">Operating at a bandwidth of 500MHz, this enhanced performance cable is engineered to support the transmission of not only high-speed data but also digital and analogue voice, along with video (RGB) signals. With its robust 23AWG solid construction, this cable is reliable for connectivity and seamless transmission.</p>
+						<div class="product">
+							<h3>SPECIFICATIONS</h3>
+							<li>Conductor: 23 AWG (Solid) Bare Copper</li>
+                                          <li>Frequency: 500 MHz</li>
+                                          <li>Insulation Material: High Density Polyethylene (HD-PE)</li>
+                                          <li>Central Cross: PE (Polyethylene) central cross</li>
+                                          <li>Sheath Material: FR PVC (Fire Retardant Polyvinyl Chloride) or LSZH (Low Smoke Zero Halogen)</li>
+                                          <li>Packaging: Packaged in an easy-to-pull box for easier installation</li>
+                                          <li>Cable Diameter: 7.5mm ± 0.4mm</li>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+            
+		<!-- End product -->
+
+
+		
+		<!-- Footer Area -->
+		<footer id="footer" class="footer ">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="single-footer">
+								<!-- <h2>About Us</h2> -->
+								<img class="img-fluid mt-2" src="{% static 'img/Logo_White_Metrobit.png' %}" alt="footer-logo">
+								<p class="mt-2">We are Team of Technology Experts Joined hand to pursue dream of bring affirmative technical revolution in the society with our IT Products portfolio.</p>
+								<!-- Social -->
+								<ul class="social">
+									<li><a href="https://www.facebook.com/MetrobitNetworks?mibextid=ZbWKwL"><i class="icofont-facebook"></i></a></li>
+									<li><a href="https://x.com/MetrobitN?t=OvpQUt5u5DGLtr7DTtVX_Q&s=08"><i class="icofont-twitter"></i></a></li>
+									<li><a href="https://www.instagram.com/metrobitnetworkspvt.ltd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==	"><i class="icofont-instagram"></i></a></li>
+									<li><a href="https://whatsapp.com/channel/0029VaCz66vL7UVXUBTbFu23"><i class="icofont-brand-whatsapp"></i></i></a></li>
+								</ul>
+								<!-- End Social -->
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="single-footer f-link">
+								<h2>About</h2>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="index.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+											<li><a href="about.html"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+											<li><a href="teams.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Team</a></li>
+											<li><a href="career.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Career</a></li>
+											<li><a href="achieve.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Achievement</a></li>
+											<li><a href="contact.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact</a></li>
+												
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Address</h2>
+								<h5 style="color: white;">Head Office Ahmedabad</h5><p>Plot no : 517,shree yamunakunj ,beside Sagar complex,Near Iskon Gathiya Rath, Opp Sanjivani Hospital, Vastrapur lake, Ahmedabad-380015</p>
+								<br>
+								<h5 style="color: white; padding-bottom: 10px;">Baroda</h5><p>GF-1 "TANISHQ" COMPLEX NR. Cow Circle,OPP.SBI URMI BRANCH PRODUCTIVITY ROAD AKOTA. Vadodara -39002</p>
+								<br>
+								<h5 style="color: white; padding-bottom: 10px;">Surat</h5><p>H.NO - 1/975 PALIYA MOHOLLO NEAR -POST OFFICE CHAR RASTANANPURA - SURAT-395001</p>
+								<br>
+								<h5 style="color: white; padding-bottom: 10px;">Rajkot</h5><p>PARIVAR" 4 SARDARNAGAR (WEST) , NR, ASTRON  CHOWK , TAGORE  ROAD , RAJOKT -360001</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="copyright-content">
+								<p>© Copyright 2024  |  All Rights Reserved by MetroBit Networls PVT. LTD.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+		<!--/ End Footer Area -->
+		
+		<!-- jquery Min JS -->
+		<script src="{% static 'js/jquery.min.js' %}"></script>
+		<!-- jquery Migrate JS -->
+		<script src="{% static 'js/jquery-migrate-3.0.0.js' %}"></script>
+		<!-- jquery Ui JS -->
+		<script src="{% static 'js/jquery-ui.min.js' %}"></script>
+		<!-- Easing JS -->
+        	<script src="{% static 'js/easing.js' %}"></script>
+		<!-- Color JS -->
+		<script src="{% static 'js/colors.js' %}"></script>
+		<!-- Popper JS -->
+		<script src="{% static 'js/popper.min.js' %}"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script src="{% static 'js/bootstrap-datepicker.js' %}"></script>
+		<!-- Jquery Nav JS -->
+        	<script src="{% static 'js/jquery.nav.js' %}"></script>
+		<!-- Slicknav JS -->
+		<script src="{% static 'js/slicknav.min.js' %}"></script>
+		<!-- ScrollUp JS -->
+        	<script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+		<!-- Niceselect JS -->
+		<script src="{% static 'js/niceselect.js' %}"></script>
+		<!-- Tilt Jquery JS -->
+		<script src="{% static 'js/tilt.jquery.min.js' %}"></script>
+		<!-- Owl Carousel JS -->
+        	<script src="{% static 'js/owl-carousel.js' %}"></script>
+		<!-- counterup JS -->
+		<script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+		<!-- Steller JS -->
+		<script src="{% static 'js/steller.js' %}"></script>
+		<!-- Wow JS -->
+		<script src="{% static 'js/wow.min.js' %}"></script>
+		<!-- Magnific Popup JS -->
+		<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="{% static 'js/bootstrap.min.js' %}"></script>
+		<!-- Main JS -->
+		<script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html> 
